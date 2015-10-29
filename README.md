@@ -23,7 +23,7 @@ javascript大标题
 2.[谷歌](http://www.google.com)<br/>
 
 ### 只是显示图片
-![github](http://img5.imgtn.bdimg.com/it/u=3580210867,3098509580&fm=21&gp=0.jpg 'github1')
+![github](https://github.com/zhaoxiaobing/javascript/blob/master/images/girl.jpg '美女')
 
 
 
