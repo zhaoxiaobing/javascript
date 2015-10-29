@@ -30,6 +30,7 @@ javascript大标题
 ### 多行文本框
 
 ```javascrit
+        @requires_authorization
         (function(){
 
             console.log('Hello World!');
