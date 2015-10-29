@@ -24,7 +24,9 @@ javascript大标题
 
 ### 只是显示图片
 ![美女](https://github.com/zhaoxiaobing/javascript/blob/master/images/girl.jpg '美女')
-![image](https://github.com/zhaoxiaobing/javascript/blob/master/images/girl.jpg)
+
+[![image]](https://github.com/zhaoxiaobing/javascript/blob/master/images/girl.jpg)
+[image]: https://github.com/zhaoxiaobing/javascript/blob/master/images/girl.jpg '美女'
 
 
 
