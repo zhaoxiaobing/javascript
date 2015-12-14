@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>html</title>
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+
+
+
+</body>
+<script type="text/javascript">
+$(function () {
+
+	function add() {
+		var defer = $.Deferred();
+		setTimeout(function () {
+			defer.resolve();
+		},2000)
+		return defer;
+	}
+
+	function get() {
+		var defer = $.Deferred();
+		setTimeout(function () {
+			defer.resolve();
+		},3000)
+		return defer;
+	}
+
+	add().promise().then(function () {
+		alert(1)
+	});
+	
+	var url_1 = 'http://pic2.nipic.com/20090416/175370_111904001_2.jpg';
+	var url_2 = 'http://abc.2008php.com/2014_Website_appreciate/2014-10-04/20141004124640.jpg';
+	$.when(url_1,url_2,get()).then(function (res) {
+		alert(res);
+	});
+
+
+
+});
+</script>
+</html>

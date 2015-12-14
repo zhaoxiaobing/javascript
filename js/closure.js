@@ -18,13 +18,13 @@ var myClosure = (function outerFunction(){
     }
 }());
 
-console.log(typeof A);
-console.log(typeof myClosure);
-console.log(myClosure.hidden);
-console.log(myClosure.inc);
+console.log(typeof A); //function
+console.log(typeof myClosure); //object
+console.log(myClosure.hidden); //undefined
+console.log(myClosure.inc); //Function: innerFunction
 
-console.log(myClosure.inc());
-console.log(myClosure.inc());
+console.log(myClosure.inc()); //1
+console.log(myClosure.inc()); //2
 
 
 
@@ -43,7 +43,7 @@ function createCounter(initial) {
 }
 var myCounter = createCounter(100);
 
-console.log(myCounter.increment(5));
-console.log(myCounter.get());
+console.log(myCounter.increment(5)); //undefined
+console.log(myCounter.get()); //105
 
 
