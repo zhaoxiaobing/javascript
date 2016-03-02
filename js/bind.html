@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bind 测试</title>
+    <style type="text/css">
+        *{margin: 0; padding: 0;}
+        a{ text-decoration: none; }
+        li{ list-style: none;}
+        #div1{ width: 300px; height: 200px; overflow: hidden; position: relative }
+        #div1 ul{ width: 10000px; height: 200px; position: absolute; z-index: 0; }
+        #div1 ul li{ width: 300px; height: 200px; float: left; text-align: center; color: #fff; line-height: 200px; font-size: 30px;}
+        #div1 ul li:nth-child(1){ background: red; }
+        #div1 ul li:nth-child(2){ background: orange; }
+        #div1 ul li:nth-child(3){ background: yellow; }
+        #div1 ul li:nth-child(4){ background: green; }
+        #div1 ul li:nth-child(5){ background: lightseagreen; }
+        #div1>a{ position: absolute; z-index: 1; display: block; top: 50%; margin-top: -10px; font-size: 16px; width: 20px; height: 20px; background: rgba(0,0,0,0.5); color: #fff; text-align: center; line-height: 20px; }
+        #div1>a:nth-child(2){ left: 20px; }
+        #div1>a:nth-child(3){ right: 20px; }
+        #div1>a:hover{ background: rgba(0,0,0,0.8);}
+    </style>
+</head>
+<body>
+
+<div id="div1">
+    <ul id="ul1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <a href="javascript:void(0)" id="prev"><</a>
+    <a href="javascript:void(0)" id="next">></a>
+</div>
+
+
+
+</body>
+
+
+
+<script type="text/javascript">
+
+    bind(绑定对象,参数,参数);
+
+    var $$ = function(id){ return document.getElementById(id); };
+
+    var imgScroll = function(obj){
+        var _this = this;
+        this.obj = $$(obj);
+        this.ul = this.obj.getElementsByTagName('ul')[0];
+        this.li = this.ul.getElementsByTagName('li');
+        this.btn = this.obj.getElementsByTagName('a');
+        console.log(this.btn.length);
+        this.width = this.li[0].offsetWidth;
+        this.len = this.li.length;
+        this.num = 0;
+        this.timer = null;
+
+        this.start();
+    };
+
+
+
+
+    imgScroll.prototype = {
+        move : function(){
+            this.timer = setInterval(function(){
+                //console.log(this.len);
+                var dis = -this.num * this.width;
+                var speed = (dis - this.ul.offsetLeft)/6;
+                speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+                if(dis == this.ul.offsetLeft){
+                    clearInterval(this.timer);
+                }else{
+                    this.ul.style.left = this.ul.offsetLeft + speed + 'px';
+                }
+            }.bind(this),45);
+        },
+        prev : function(){
+            this.num--;
+            if(this.num<0){
+                this.num = this.len-1;
+            }
+            this.move();
+        },
+        next : function(){
+            this.num++;
+            if(this.num>this.len - 1){
+                this.num = 0;
+            }
+            this.move();
+        },
+        start : function(){
+            //prev
+            this.btn[0].onclick = function(){
+                this.prev();
+            }.bind(this);
+
+            //next
+            this.btn[1].onclick = function(){
+                this.next();
+            }.bind(this);
+        }
+    };
+
+    var scroll1 = new imgScroll('div1');
+
+</script>
+
+</html>
