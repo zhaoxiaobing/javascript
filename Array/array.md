@@ -21,10 +21,15 @@ console.log(a.concat(b,c)); //[ 1, 2, 3, 'zhao', 'xiao', 'bing' ]
 ```
 
 ### join();
-+ join() 方法用于把数组中的所有元素放入一个字符串。
-+ 元素是通过指定的分隔符进行分隔的。
-+ arrayObject.join(separator); //separator, 可选。指定要使用的分隔符。如果省略该参数，则使用逗号作为分隔符。
 
+* 用法
+> join() 方法用于把数组中的所有元素放入一个字符串。
+> 元素是通过指定的分隔符进行分隔的。
+
+* 语法
+> arrayObject.join(separator); //separator, 可选。指定要使用的分隔符。如果省略该参数，则使用逗号作为分隔符。
+
+* 例子
 
 ```javascript
 var arr1 = ['George','John','Thomas',1,2,3];
