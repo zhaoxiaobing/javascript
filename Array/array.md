@@ -7,6 +7,8 @@
 * 语法
 > arrayObject.concat(arrayX,arrayX,......,arrayX);
 
+* 例子
+
 ```javascript
 var a = [1,2,3];
 var b = ['zhao'];
