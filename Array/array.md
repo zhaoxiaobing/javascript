@@ -43,6 +43,42 @@ console.log(arr3.join('|'));//
 ```
 
 
+### pop();
+* 用法
+> 用于删除并返回数组的最后一个元素。
+
+* 语法
+> arrayObject.pop();
+
+* 返回值
+> arrayObject 的最后一个元素
+
+* 例子
+
+```javascript
+    var arr1 = ['zhao','xiao','bing'];
+    
+    console.log(arr1.pop());//bing
+    console.log(arr1);//['zhao','xiao']
+```
+
+
+
+
+
+* 用法
+> 
+
+* 语法
+> 
+
+* 例子
+
+```javascript
+
+
+
+
 
 
 
