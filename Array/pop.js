@@ -7,7 +7,10 @@
  * 语法 arrayObject.pop()
  */
 
+var arr0 = [];
 var arr1 = ['zhao','xiao','bing'];
 
-console.log(arr1.pop());
-console.log(arr1);
+console.log(arr0.pop());// undefined
+console.log(arr0);// []
+console.log(arr1.pop());// bing
+console.log(arr1);// ['zhao','xiao']

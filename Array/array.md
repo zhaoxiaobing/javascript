@@ -53,29 +53,88 @@ console.log(arr3.join('|'));//
 * 返回值
 > arrayObject 的最后一个元素
 
+* 说明
+> 如果数组是空的，那么 pop() 方法将不进行任何操作，返回 undefined 值。请注意，该方法不创建新数组，而是直接修改原有的 arrayObject。
+
 * 例子
 
 ```javascript
-    var arr1 = ['zhao','xiao','bing'];
-    
-    console.log(arr1.pop());//bing
-    console.log(arr1);//['zhao','xiao']
+var arr0 = [];
+var arr1 = ['zhao','xiao','bing'];
+
+console.log(arr0.pop());// undefined
+console.log(arr0);// []
+console.log(arr1.pop());// bing
+console.log(arr1);// ['zhao','xiao']
+```
+
+
+### shift();
+* 用法
+> 用于把数组的第一个元素从其中删除，并返回第一个元素的值。
+
+* 语法
+> arrayObject.shift();
+
+* 返回值
+> arrayObject 的第一个元素的值。
+
+* 说明
+> 如果数组是空的，那么 shift() 方法将不进行任何操作，返回 undefined 值。请注意，该方法不创建新数组，而是直接修改原有的 arrayObject。
+
+* 例子
+
+```javascript
+var arr0 = [];
+var arr1 = ['zhao','xiao','bing'];
+
+console.log(arr0.shift());// undefined
+console.log(arr0);// []
+console.log(arr1.shift());// zhao
+console.log(arr1);// ['xiao','bing']
+```
+
+
+### push();
+* 用法
+> push() 方法可向数组的末尾添加一个或多个元素，并返回新的长度。
+
+* 语法
+> arrayObject.push(newelement1,newelement2,....,newelementX);
+
+* 返回值
+> 把指定的值添加到数组后的新长度。
+
+* 例子
+
+```javascript
+var arr1 = ['zhao','xiao'];
+
+console.log(arr1.push());//2
+console.log(arr1);//['zhao','xiao']
+console.log(arr1.push('bing'));//3
+console.log(arr1);//['zhao','xiao','bing']
+console.log(arr1.push('good','good','study'));//6
+console.log(arr1);//['zhao','xiao','bing','good','good','study']
 ```
 
 
 
 
-
+### pop();
 * 用法
 > 
 
 * 语法
 > 
 
+* 返回值
+> 
+
 * 例子
 
 ```javascript
-
+```
 
 
 
