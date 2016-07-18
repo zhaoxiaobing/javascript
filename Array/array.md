@@ -299,15 +299,15 @@ console.log(arr.toLocaleString()); //George,John,Thomas
 ```
 
 
-### pop();
+### sort();
 * 用法
-> 
+> 用于对数组的元素进行排序。
 
 * 语法
-> 
+> arrayObject.sort(sortby);  sortby	可选。规定排序顺序。必须是函数。
 
 * 返回值
-> 
+> 对数组的引用。请注意，数组在原数组上进行排序，不生成副本。
 
 * 例子
 
