@@ -679,19 +679,3 @@ var str="Hello World!";
 console.log(str.toUpperCase()); // HELLO WORLD!
 ```
 
-###  anchor();
-
-* 用法: 
-> 
-
-* 语法
-> 
-
-* 说明
-> 
-
-* 注释
-> 
-
-```javascript
-```

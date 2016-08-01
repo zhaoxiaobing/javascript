@@ -231,3 +231,211 @@ var myDate=new Date()
     <td>返回 Date 对象的原始值。</td>
   </tr>
 </table>
+
+###  Date();
+
+* 用法: 
+> Date() 方法可返回当天的日期和时间。
+
+* 语法
+> Date()
+
+```javascript
+console.log(Date()); // Mon Aug 01 2016 11:36:39 GMT+0800 (CST)
+```
+
+###  getDate();
+
+* 用法: 
+> getDate() 方法可返回月份的某一天。
+
+* 语法
+> dateObject.getDate()
+
+* 说明
+> 该方法总是结合一个 Date 对象来使用。
+
+* 返回值
+> dateObject 所指的月份中的某一天，使用本地时间。返回值是 1 ~ 31 之间的一个整数。
+
+```javascript
+var d = new Date();
+console.log(d.getDate()); //当天的日期。   8月1号测试 返回  1
+```
+
+###  getDay();
+
+* 用法: 
+> getDay() 方法可返回表示星期的某一天的数字。
+
+* 语法
+> dateObject.getDay()
+
+* 返回值
+> dateObject 所指的星期中的某一天，使用本地时间。返回值是 0（周日） 到 6（周六） 之间的一个整数。
+
+* 注释
+> 该方法总是结合一个 Date 对象来使用。
+
+```javascript
+var d=new Date();
+console.log(d.getDay()); //今天8月1号星期一  所以输出 1
+```
+
+###  getMonth();
+
+* 用法: 
+> getMonth() 方法可返回表示月份的数字。
+
+* 语法
+> dateObject.getMonth()
+
+* 返回值
+> dateObject 的月份字段，使用本地时间。返回值是 0（一月） 到 11（十二月） 之间的一个整数。
+
+* 注释
+> 该方法总是结合一个 Date 对象来使用。
+
+```javascript
+var d=new Date();
+console.log(d.getMonth()); // 今天八月1号  所以输出 7
+```
+
+
+###  getFullYear();
+
+* 用法: 
+> getFullYear() 方法可返回一个表示年份的 4 位数字。
+
+* 语法
+> dateObject.getFullYear()
+
+* 返回值
+> 当 dateObject 用本地时间表示时返回的年份。返回值是一个四位数，表示包括世纪值在内的完整年份，而不是两位数的缩写形式。
+
+* 注释
+> 该方法总是结合一个 Date 对象来使用。
+
+```javascript
+var d = new Date();
+console.log(d.getFullYear()); //今年2016  输出: 2016
+```
+
+
+###  getHours();
+
+* 用法: 
+> getHours() 方法可返回时间的小时字段。
+
+* 语法
+> dateObject.getHours()
+
+* 返回值
+> dateObject 的小时字段，以本地时间显示。返回值是 0 （午夜） 到 23 （晚上 11 点）之间的一个整数。
+
+* 注释
+> 由 getHours() 返回的值是一个两位的数字。不过返回值不总是两位的，如果该值小于 10，则仅返回一位数字。 该方法总是结合一个 Date 对象来使用。
+
+```javascript
+var d = new Date();
+console.log(d.getHours()); //现在12点   输出: 12
+```
+
+###  getMinutes();
+
+* 用法: 
+> getMinutes() 方法可返回时间的分钟字段。
+
+* 语法
+> dateObject.getMinutes()
+
+* 返回值
+> dateObject 的分钟字段，以本地时间显示。返回值是 0 ~ 59 之间的一个整数。
+
+* 注释
+> 由 getMinutes() 返回的值是一个两位的数字。不过返回值不总是两位的，如果该值小于 10，则仅返回一位数字。该方法总是结合一个 Date 对象来使用。
+
+```javascript
+var d = new Date();
+console.log(d.getMinutes()); //现在时间12点12分   输出: 12
+```
+
+###  anchor();
+
+* 用法: 
+> getSeconds() 方法可返回时间的秒。
+
+* 语法
+> dateObject.getSeconds()
+
+* 返回值
+> dateObject 的分钟字段，以本地时间显示。返回值是 0 ~ 59 之间的一个整数。
+
+* 注释
+> 由 getSeconds() 返回的值是一个两位的数字。不过返回值不总是两位的，如果该值小于 10，则仅返回一位数字。 该方法总是结合一个 Date 对象来使用。
+
+```javascript
+var d = new Date();
+console.log(d.getSeconds()); // 现在时间 12点 15分 52秒  输出: 52
+```
+
+
+###  getTime();
+
+* 用法: 
+> getTime() 方法可返回距 1970 年 1 月 1 日之间的毫秒数。
+
+* 语法
+> dateObject.getTime()
+
+* 返回值
+> dateObject 指定的日期和时间距 1970 年 1 月 1 日午夜（GMT 时间）之间的毫秒数。
+
+* 注释
+> 该方法总是结合一个 Date 对象来使用。
+
+```javascript
+var d = new Date();
+console.log(d.getTime()); // 1470025102150
+```
+
+
+###  getTimezoneOffset();
+
+* 用法: 
+> getTimezoneOffset() 方法可返回格林威治时间和本地时间之间的时差，以分钟为单位。
+
+* 语法
+> dateObject.getTimezoneOffset()
+
+* 返回值
+> 本地时间与 GMT 时间之间的时间差，以分钟为单位。
+
+* 说明
+> getTimezoneOffset() 方法返回的是本地时间与 GMT 时间或 UTC 时间之间相差的分钟数。实际上，该函数告诉我们运行 JavaScript 代码的时区，以及指定的时间是否是夏令时。返回之所以以分钟计，而不是以小时计，原因是某些国家所占有的时区甚至不到一个小时的间隔。
+
+* 注释
+> 由于使用夏令时的惯例，该方法的返回值不是一个常量。 该方法总是结合一个 Date 对象来使用。
+
+```javascript
+```
+
+
+
+
+###  anchor();
+
+* 用法: 
+> 
+
+* 语法
+> 
+
+* 说明
+> 
+
+* 注释
+> 
+
+```javascript
+```
