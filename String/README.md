@@ -677,7 +677,7 @@ console.log(str.toLowerCase()); // hello world!
 ```javascript
 var str="Hello World!";
 console.log(str.toUpperCase()); // HELLO WORLD!
-
+```
 
 ###  anchor();
 
