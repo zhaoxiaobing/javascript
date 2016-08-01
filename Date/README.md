@@ -232,7 +232,7 @@ var myDate=new Date()
   </tr>
 </table>
 
-###  Date();
+####  Date();
 
 * 用法: 
 > Date() 方法可返回当天的日期和时间。
@@ -244,7 +244,7 @@ var myDate=new Date()
 console.log(Date()); // Mon Aug 01 2016 11:36:39 GMT+0800 (CST)
 ```
 
-###  getDate();
+####  getDate();
 
 * 用法: 
 > getDate() 方法可返回月份的某一天。
@@ -263,7 +263,7 @@ var d = new Date();
 console.log(d.getDate()); //当天的日期。   8月1号测试 返回  1
 ```
 
-###  getDay();
+####  getDay();
 
 * 用法: 
 > getDay() 方法可返回表示星期的某一天的数字。
@@ -282,7 +282,7 @@ var d=new Date();
 console.log(d.getDay()); //今天8月1号星期一  所以输出 1
 ```
 
-###  getMonth();
+####  getMonth();
 
 * 用法: 
 > getMonth() 方法可返回表示月份的数字。
@@ -302,7 +302,7 @@ console.log(d.getMonth()); // 今天八月1号  所以输出 7
 ```
 
 
-###  getFullYear();
+####  getFullYear();
 
 * 用法: 
 > getFullYear() 方法可返回一个表示年份的 4 位数字。
@@ -322,7 +322,7 @@ console.log(d.getFullYear()); //今年2016  输出: 2016
 ```
 
 
-###  getHours();
+####  getHours();
 
 * 用法: 
 > getHours() 方法可返回时间的小时字段。
@@ -341,7 +341,7 @@ var d = new Date();
 console.log(d.getHours()); //现在12点   输出: 12
 ```
 
-###  getMinutes();
+####  getMinutes();
 
 * 用法: 
 > getMinutes() 方法可返回时间的分钟字段。
@@ -360,7 +360,7 @@ var d = new Date();
 console.log(d.getMinutes()); //现在时间12点12分   输出: 12
 ```
 
-###  anchor();
+####  getSeconds();
 
 * 用法: 
 > getSeconds() 方法可返回时间的秒。
@@ -380,7 +380,7 @@ console.log(d.getSeconds()); // 现在时间 12点 15分 52秒  输出: 52
 ```
 
 
-###  getTime();
+####  getTime();
 
 * 用法: 
 > getTime() 方法可返回距 1970 年 1 月 1 日之间的毫秒数。
@@ -400,7 +400,7 @@ console.log(d.getTime()); // 1470025102150
 ```
 
 
-###  getTimezoneOffset();
+####  getTimezoneOffset();
 
 * 用法: 
 > getTimezoneOffset() 方法可返回格林威治时间和本地时间之间的时差，以分钟为单位。
@@ -421,21 +421,3 @@ console.log(d.getTime()); // 1470025102150
 ```
 
 
-
-
-###  anchor();
-
-* 用法: 
-> 
-
-* 语法
-> 
-
-* 说明
-> 
-
-* 注释
-> 
-
-```javascript
-```

@@ -199,7 +199,7 @@ console.log(txt.anchor("myanchor")); //输出: <a name="myanchor">Hello world!</
 ```
 
 
-###  big();
+####  big();
 
 * 用法: 
 > big() 方法用于把字符串显示为大号字体。
@@ -212,7 +212,7 @@ var str="Hello world!";
 console.log(str.big()); //输出: <big>Hello world!</big>
 ```
 
-###  blink();
+####  blink();
 
 * 用法: 
 > blink() 方法用于显示闪动的字符串。
@@ -229,7 +229,7 @@ console.log(str.blink()); // <blink>Hello world!</blink>
 ```
 
 
-###  bold();
+####  bold();
 
 * 用法: 
 > bold() 方法用于把字符串显示为粗体。
@@ -243,7 +243,7 @@ console.log(str.bold()); // <b>Hello world!</b>
 ```
 
 
-###  charAt();
+####  charAt();
 
 * 用法: 
 > charAt() 方法可返回指定位置的字符。
@@ -263,7 +263,7 @@ console.log(str.charAt(29)); // 空字符串。
 ```
 
 
-###  charCodeAt();
+####  charCodeAt();
 
 * 用法: 
 > charCodeAt() 方法可返回指定位置的字符的 Unicode 编码。这个返回值是 0 - 65535 之间的整数
@@ -286,7 +286,7 @@ console.log(str.charCodeAt(29)); // NaN
 ```
 
 
-###  concat();
+####  concat();
 
 * 用法: 
 > concat() 方法用于连接两个或多个字符串。
@@ -310,7 +310,7 @@ console.log(str2); // world!
 ```
 
 
-###  fixed();
+####  fixed();
 
 * 用法: 
 > fixed() 方法用于把字符串显示为打字机字体。
@@ -325,7 +325,7 @@ console.log(str.fixed());
 ```
 
 
-###  fontcolor();
+####  fontcolor();
 
 * 用法: 
 > fontcolor() 方法用于按照指定的颜色来显示字符串。
@@ -340,7 +340,7 @@ console.log(str.fontcolor("red")); // <font color="red">Hello world!</font>
 ```
 
 
-###  fromCharCode();
+####  fromCharCode();
 
 * 用法: 
 > fromCharCode() 可接受一个指定的 Unicode 值，然后返回一个字符串。
@@ -361,7 +361,7 @@ console.log(String.fromCharCode(109,110)); // mn
 ```
 
 
-###  indexOf();
+####  indexOf();
 
 * 用法: 
 > indexOf() 方法可返回某个指定的字符串值在字符串中首次出现的位置。
@@ -388,7 +388,7 @@ console.log(str.indexOf("world")); // 6
 ```
 
 
-###  italics();
+####  italics();
 
 * 用法: 
 > italics() 方法用于把字符串显示为斜体。
@@ -402,7 +402,7 @@ console.log(str.italics()); // <i>Hello world!</i>
 ```
 
 
-###  lastIndexOf();
+####  lastIndexOf();
 
 * 用法: 
 > lastIndexOf() 方法可返回一个指定的字符串值最后出现的位置，在一个字符串中的指定位置从后向前搜索。
@@ -429,7 +429,7 @@ console.log(str.lastIndexOf("world")); // 13
 ```
 
 
-###  anchor();
+####  anchor();
 
 * 用法: 
 > link() 方法用于把字符串显示为超链接。
@@ -445,7 +445,7 @@ console.log(str.link("http://www.w3school.com.cn")); // <a href="http://www.w3sc
 ```
 
 
-###  slice();
+####  slice();
 
 * 用法: 
 >  slice() 方法可提取字符串的某个部分，并以新的字符串返回被提取的部分。
@@ -470,7 +470,7 @@ console.log(str); // Hello happy world!
 ```
 
 
-###  small();
+####  small();
 
 * 用法: 
 > small() 方法用于把字符串显示为小号字。
@@ -484,7 +484,7 @@ console.log(str.small()); // <small>Hello world!</small>
 ```
 
 
-###  split();
+####  split();
 
 * 用法: 
 > split() 方法用于把一个字符串分割成字符串数组。
@@ -511,7 +511,7 @@ console.log("|a|b|c".split("|")); // [ '', 'a', 'b', 'c' ]
 ```
 
 
-###  strike();
+####  strike();
 
 * 用法: 
 > strike() 方法用于显示加删除线的字符串。
@@ -526,7 +526,7 @@ console.log(str.strike()); // <strike>Hello world!</strike>
 ```
 
 
-###  sub();
+####  sub();
 
 * 用法: 
 > sub() 方法用于把字符串显示为下标。
@@ -541,7 +541,7 @@ console.log(str.sub()); // <sub>Hello world!</sub>
 ```
 
 
-###  sup();
+####  sup();
 
 * 用法: 
 > sup() 方法用于把字符串显示为上标。
@@ -556,7 +556,7 @@ console.log(str.sup());//<sup>Hello world!</sup>
 ```
 
 
-###  substr();
+####  substr();
 
 * 用法: 
 > substr() 方法可在字符串中抽取从 start 下标开始的指定数目的字符。
@@ -582,7 +582,7 @@ console.log(str.substr(-5,-2)); // 空
 ```
 
 
-###  substring();
+####  substring();
 
 * 用法: 
 > substring() 方法用于提取字符串中介于两个指定下标之间的字符。
@@ -607,7 +607,7 @@ console.log(str.substring(-3,-2)); // 空
 ```
 
 
-###  toLocaleLowerCase();
+####  toLocaleLowerCase();
 
 * 用法: 
 > toLocaleLowerCase() 方法用于把字符串转换为小写。
@@ -627,7 +627,7 @@ console.log(str.toLocaleLowerCase()); //hello world!
 ```
 
 
-###  toLocaleUpperCase();
+####  toLocaleUpperCase();
 
 * 用法: 
 > toLocaleUpperCase() 方法用于把字符串转换为大写。
@@ -647,7 +647,7 @@ console.log(str.toLocaleUpperCase()); // HELLO WORLD!
 ```
 
 
-###  toLowerCase();
+####  toLowerCase();
 
 * 用法: 
 > toLowerCase() 方法用于把字符串转换为小写。
@@ -663,7 +663,7 @@ var str="Hello World!";
 console.log(str.toLowerCase()); // hello world!
 ```
 
-###  toUpperCase();
+####  toUpperCase();
 
 * 用法: 
 > toUpperCase() 方法用于把字符串转换为大写。
