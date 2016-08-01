@@ -1,18 +1,18 @@
 
 
-javascript�����
+javascript大标题
 ===================================
 
 
 
 
-�б���
+中标题
 -----------------------------------
 
 
 
 
-###С����
+###小标题
 
 
 
@@ -20,14 +20,14 @@ javascript�����
 
 
 
-### �����ı���
+### 单行文本框
 
-        ���ǵ����ı���
-
-
+        我是单行文本框
 
 
-### �����ı���
+
+
+### 多行文本框
 
 ```javascript
         (function(){
@@ -37,42 +37,42 @@ javascript�����
         })();
 ```
 
-### ����
+### 链接
 
-1.[�ٶ�](http://www.baidu.com)<br/>
+1.[百度](http://www.baidu.com)<br/>
 
-2.[�ȸ�](http://www.google.com)<br/>
-
-
-
-
-### ֻ����ʾͼƬ
-
-![��Ů](https://www.zybuluo.com/static/img/logo.png)
-
-![��Ů](https://www.zybuluo.com/static/img/logo.png '��Ů')
-
-> * ����֪ʶ��ѧϰ�ʼ�
-> * �����ռǣ����ģ���������
-> * ׫д���������ĸ壨����֧�֣�
-> * ׫д����ѧ�����ģ�LaTeX ��ʽ֧�֣�
-
-
-> ����֪ʶ��ѧϰ�ʼ�
-> �����ռǣ����ģ���������
-> ׫д���������ĸ壨����֧�֣�
-> ׫д����ѧ�����ģ�LaTeX ��ʽ֧�֣�
+2.[谷歌](http://www.google.com)<br/>
 
 
 
-- [ ] ֧���� PDF ��ʽ�����ĸ�
-- [ ] �Ľ� Cmd ��Ⱦ�㷨��ʹ�þֲ���Ⱦ���������ȾЧ��
-- [x] ���� Todo �б�����
-- [x] �޸� LaTex ��ʽ��Ⱦ����
-- [x] ���� LaTex ��ʽ��Ź���
+
+### 只是显示图片
+
+![美女](https://www.zybuluo.com/static/img/logo.png)
+
+![美女](https://www.zybuluo.com/static/img/logo.png '美女')
+
+> * 整理知识，学习笔记
+> * 发布日记，杂文，所见所想
+> * 撰写发布技术文稿（代码支持）
+> * 撰写发布学术论文（LaTeX 公式支持）
 
 
-### 3. ����һ�δ���[^code]
+> 整理知识，学习笔记
+> 发布日记，杂文，所见所想
+> 撰写发布技术文稿（代码支持）
+> 撰写发布学术论文（LaTeX 公式支持）
+
+
+
+- [ ] 支持以 PDF 格式导出文稿
+- [ ] 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率
+- [x] 新增 Todo 列表功能
+- [x] 修复 LaTex 公式渲染问题
+- [x] 新增 LaTex 公式编号功能
+
+
+### 3. 高亮一段代码[^code]
 
 ```python
 @requires_authorization
